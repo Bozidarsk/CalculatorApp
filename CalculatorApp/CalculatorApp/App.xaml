@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculatorApp.App">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="PrimaryColorLight">#fcfcfc</Color>
+            <Color x:Key="PrimaryTextColorLight">#464646</Color>
+            <Color x:Key="PrimaryHighlightedColorLight">#e1e1e1</Color>
+            <Color x:Key="SecondaryColorLight">#f0f0f0</Color>
+            <Color x:Key="SecondaryTextColorLight">#848484</Color>
+            <Color x:Key="SecondaryHighlightedColorLight">#cacaca</Color>
+
+            <Color x:Key="PrimaryColorDark">#000000</Color>
+            <Color x:Key="PrimaryTextColorDark">#a8a8a8</Color>
+            <Color x:Key="PrimaryHighlightedColorDark">#191919</Color>
+            <Color x:Key="SecondaryColorDark">#191919</Color>
+            <Color x:Key="SecondaryTextColorDark">#8c8c8c</Color>
+            <Color x:Key="SecondaryHighlightedColorDark">#303030</Color>
+
+            <Color x:Key="AccentColor">#016cde</Color>
+            <Color x:Key="BorderColor">#2a2a2a</Color>
+
+            <x:Double x:Key="ButtonSize">60</x:Double>
+
+            <Style TargetType="ContentView">
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource PrimaryColorLight}, Dark={StaticResource PrimaryColorDark}}"></Setter>
+            </Style>
+
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource PrimaryTextColorLight}, Dark={StaticResource PrimaryTextColorDark}}"></Setter>
+                <Setter Property="FontFamily" Value="Roboto-Regular.ttf"></Setter>
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="BorderColor" Value="{StaticResource BorderColor}"></Setter>
+                <Setter Property="FontFamily" Value="Roboto-Regular.ttf"></Setter>
+                <Setter Property="BorderWidth" Value="1"></Setter>
+                <Setter Property="FontSize" Value="25"></Setter>
+                <Setter Property="TextTransform" Value="Lowercase"></Setter>
+            </Style>
+
+            <Style TargetType="Button" Class="Primary">
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource PrimaryTextColorLight}, Dark={StaticResource PrimaryTextColorDark}}"></Setter>
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource PrimaryColorLight}, Dark={StaticResource PrimaryColorDark}}"></Setter>
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource PrimaryColorLight}, Dark={StaticResource PrimaryColorDark}}"/>
+                                </VisualState.Setters>
+                            </VisualState>
+                            
+                            <VisualState x:Name="Pressed">
+                                <VisualState.Setters>
+                                    <!-- Remove the ripple effect. -->
+                                    <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource PrimaryHighlightedColorLight}, Dark={StaticResource PrimaryHighlightedColorDark}}"/>
+                                </VisualState.Setters>
+                            </VisualState>
+
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                    
+                </Setter>
+            </Style>
+
+            <Style TargetType="Button" Class="Secondary">
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource SecondaryTextColorLight}, Dark={StaticResource SecondaryTextColorDark}}"></Setter>
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource SecondaryColorLight}, Dark={StaticResource SecondaryColorDark}}"></Setter>
+                <Setter Property="VisualStateManager.VisualStateGroups">
+
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource SecondaryColorLight}, Dark={StaticResource SecondaryColorDark}}"/>
+                                </VisualState.Setters>
+                            </VisualState>
+
+                            <VisualState x:Name="Pressed">
+                                <VisualState.Setters>
+                                    <!-- Remove the ripple effect. -->
+                                    <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource SecondaryHighlightedColorLight}, Dark={StaticResource SecondaryHighlightedColorDark}}"/>
+                                </VisualState.Setters>
+                            </VisualState>
+
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+
+                </Setter>
+            </Style>
+
+        </ResourceDictionary>        
+    </Application.Resources>
+
+</Application>

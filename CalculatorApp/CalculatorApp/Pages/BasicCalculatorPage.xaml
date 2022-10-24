@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculatorApp.Pages.BasicCalculatorPage">
+
+    <ContentView>
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+            <Label 
+                x:Name="display" 
+                Text="0" 
+                FontSize="40" 
+                Padding="0, 80, 10, 80" 
+                TextTransform="Lowercase" 
+                HorizontalTextAlignment="End">
+            </Label>
+
+            <Grid VerticalOptions="FillAndExpand" RowSpacing="0" ColumnSpacing="0">
+                <Button Grid.Row="0" Grid.Column="0" Text="π" ClassId="pi" Clicked="OnButtonPress" StyleClass="Secondary" x:Name="pi"></Button>
+                <Button Grid.Row="0" Grid.Column="1" Text="log" ClassId="log(" Clicked="OnButtonPress" StyleClass="Secondary" x:Name="log"></Button>
+                <Button Grid.Row="0" Grid.Column="2" Text="sin" ClassId="sin(" Clicked="OnButtonPress" StyleClass="Secondary" x:Name="sin"></Button>
+                <Button Grid.Row="0" Grid.Column="3" Text="cos" ClassId="cos(" Clicked="OnButtonPress" StyleClass="Secondary" x:Name="cos"></Button>
+                <Button Grid.Row="0" Grid.Column="4" Text="tan" ClassId="tan(" Clicked="OnButtonPress" StyleClass="Secondary" x:Name="tan"></Button>
+
+                <Button Grid.Row="1" Grid.Column="0" Text="(" ClassId="(" Clicked="OnButtonPress" StyleClass="Secondary"></Button>
+                <Button Grid.Row="1" Grid.Column="1" Text="C" ClassId="cls" Clicked="OnButtonPress" StyleClass="Primary" TextColor="{StaticResource AccentColor}"></Button>
+                <Button Grid.Row="1" Grid.Column="2" Text="/" ClassId="/" Clicked="OnButtonPress" StyleClass="Primary" TextColor="{StaticResource AccentColor}"></Button>
+                <Button Grid.Row="1" Grid.Column="3" Text="*" ClassId="*" Clicked="OnButtonPress" StyleClass="Primary" TextColor="{StaticResource AccentColor}"></Button>
+                <Button Grid.Row="1" Grid.Column="4" Text="&lt;-" ClassId="bs" Clicked="OnButtonPress" StyleClass="Primary" TextColor="{StaticResource AccentColor}"></Button>
+
+                <Button Grid.Row="2" Grid.Column="0" Text=")" ClassId=")" Clicked="OnButtonPress" StyleClass="Secondary"></Button>
+                <Button Grid.Row="2" Grid.Column="1" Text="7" ClassId="7" Clicked="OnButtonPress" StyleClass="Primary"></Button>
+                <Button Grid.Row="2" Grid.Column="2" Text="8" ClassId="8" Clicked="OnButtonPress" StyleClass="Primary"></Button>
+                <Button Grid.Row="2" Grid.Column="3" Text="9" ClassId="9" Clicked="OnButtonPress" StyleClass="Primary"></Button>
+                <Button Grid.Row="2" Grid.Column="4" Text="-" ClassId="-" Clicked="OnButtonPress" StyleClass="Primary" TextColor="{StaticResource AccentColor}"></Button>
+
+                <Button Grid.Row="3" Grid.Column="0" Text="^" ClassId="^" Clicked="OnButtonPress" StyleClass="Secondary" x:Name="carret"></Button>
+                <Button Grid.Row="3" Grid.Column="1" Text="4" ClassId="4" Clicked="OnButtonPress" StyleClass="Primary"></Button>
+                <Button Grid.Row="3" Grid.Column="2" Text="5" ClassId="5" Clicked="OnButtonPress" StyleClass="Primary"></Button>
+                <Button Grid.Row="3" Grid.Column="3" Text="6" ClassId="6" Clicked="OnButtonPress" StyleClass="Primary"></Button>
+                <Button Grid.Row="3" Grid.Column="4" Text="+" ClassId="+" Clicked="OnButtonPress" StyleClass="Primary" TextColor="{StaticResource AccentColor}"></Button>
+
+                <Button Grid.Row="4" Grid.Column="0" Text="√" ClassId="√" Clicked="OnButtonPress" StyleClass="Secondary" x:Name="sqrt"></Button>
+                <Button Grid.Row="4" Grid.Column="1" Text="1" ClassId="1" Clicked="OnButtonPress" StyleClass="Primary"></Button>
+                <Button Grid.Row="4" Grid.Column="2" Text="2" ClassId="2" Clicked="OnButtonPress" StyleClass="Primary"></Button>
+                <Button Grid.Row="4" Grid.Column="3" Text="3" ClassId="3" Clicked="OnButtonPress" StyleClass="Primary"></Button>
+                <Button Grid.Row="4" Grid.Column="4" Text="=" ClassId="=" Clicked="OnButtonPress" StyleClass="Primary" 
+                        BackgroundColor="{StaticResource AccentColor}"
+                        BorderColor="{StaticResource AccentColor}"
+                        TextColor="White"
+                        Grid.RowSpan="2">
+                    <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroupList>
+                            <VisualStateGroup x:Name="CommonStates">
+
+                                <VisualState x:Name="Normal">
+                                    <VisualState.Setters>
+                                        <Setter Property="BackgroundColor" Value="{StaticResource AccentColor}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <!-- Remove the ripple effect. -->
+                                        <Setter Property="BackgroundColor" Value="{StaticResource AccentColor}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+
+                            </VisualStateGroup>
+                        </VisualStateGroupList>
+                    </VisualStateManager.VisualStateGroups>
+                </Button>
+
+                <Button Grid.Row="5" Grid.Column="0" Text="2nd" ClassId="2nd" Clicked="OnButtonPress" StyleClass="Secondary"></Button>
+                <Button Grid.Row="5" Grid.Column="1" Text="%" ClassId="%" Clicked="OnButtonPress" StyleClass="Primary"></Button>
+                <Button Grid.Row="5" Grid.Column="2" Text="0" ClassId="0" Clicked="OnButtonPress" StyleClass="Primary"></Button>
+                <Button Grid.Row="5" Grid.Column="3" Text="." ClassId="." Clicked="OnButtonPress" StyleClass="Primary"></Button>
+            </Grid>
+
+        </StackLayout>
+    </ContentView>
+
+</ContentPage>

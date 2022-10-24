@@ -30,6 +30,7 @@
 
             <Style TargetType="Label">
                 <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource PrimaryTextColorLight}, Dark={StaticResource PrimaryTextColorDark}}"></Setter>
+                <Setter Property="FontSize" Value="20"></Setter>
                 <Setter Property="FontFamily" Value="Roboto-Regular.ttf"></Setter>
             </Style>
 

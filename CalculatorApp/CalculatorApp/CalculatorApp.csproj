@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,6 +21,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Resources\icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
     <PackageReference Include="System.Drawing.Common" Version="4.5.2" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />  
@@ -34,9 +39,15 @@
     <Compile Update="Pages\BasicCalculatorPage.xaml.cs">
       <DependentUpon>BasicCalculatorPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Pages\PolynomialCalculatorPage.xaml.cs">
+      <DependentUpon>PolynomialCalculatorPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Pages\PolynomialCalculatorPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\DarkTheme.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

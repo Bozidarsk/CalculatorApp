@@ -5,6 +5,8 @@ D:\Projects\CalculatorApp\CalculatorApp\CalculatorApp\obj\Debug\netstandard2.0\C
 D:\Projects\CalculatorApp\CalculatorApp\CalculatorApp\obj\Debug\netstandard2.0\CalculatorApp.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projects\CalculatorApp\CalculatorApp\CalculatorApp\obj\Debug\netstandard2.0\App.xaml.g.cs
 D:\Projects\CalculatorApp\CalculatorApp\CalculatorApp\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+D:\Projects\CalculatorApp\CalculatorApp\CalculatorApp\obj\Debug\netstandard2.0\Pages\BasicCalculatorPage.xaml.g.cs
+D:\Projects\CalculatorApp\CalculatorApp\CalculatorApp\obj\Debug\netstandard2.0\Pages\PolynomialCalculatorPage.xaml.g.cs
 D:\Projects\CalculatorApp\CalculatorApp\CalculatorApp\obj\Debug\netstandard2.0\CalculatorApp.AssemblyInfoInputs.cache
 D:\Projects\CalculatorApp\CalculatorApp\CalculatorApp\obj\Debug\netstandard2.0\CalculatorApp.AssemblyInfo.cs
 D:\Projects\CalculatorApp\CalculatorApp\CalculatorApp\obj\Debug\netstandard2.0\CalculatorApp.csproj.CoreCompileInputs.cache
@@ -13,4 +15,3 @@ D:\Projects\CalculatorApp\CalculatorApp\CalculatorApp\obj\Debug\netstandard2.0\C
 D:\Projects\CalculatorApp\CalculatorApp\CalculatorApp\obj\Debug\netstandard2.0\refint\CalculatorApp.dll
 D:\Projects\CalculatorApp\CalculatorApp\CalculatorApp\obj\Debug\netstandard2.0\CalculatorApp.pdb
 D:\Projects\CalculatorApp\CalculatorApp\CalculatorApp\obj\Debug\netstandard2.0\ref\CalculatorApp.dll
-D:\Projects\CalculatorApp\CalculatorApp\CalculatorApp\obj\Debug\netstandard2.0\Pages\BasicCalculatorPage.xaml.g.cs

@@ -1342,7 +1342,7 @@ application_config:
 
 	.type	.L.autostr.6, %object
 .L.autostr.6:
-	.asciz	"71e4868f-d31a-4cf0-92c2-57e79582900e"
+	.asciz	"f01e73c0-0acb-4f38-bff8-002268e3f01a"
 	.size	.L.autostr.6, 37
 
 	.type	.L.autostr.7, %object
@@ -1517,8 +1517,8 @@ application_config:
 
 	.type	.L.autostr.41, %object
 .L.autostr.41:
-	.asciz	"com.companyname.calculatorapp"
-	.size	.L.autostr.41, 30
+	.asciz	"com.bozidar.calculatorapp"
+	.size	.L.autostr.41, 26
 
 
 	.ident	"Xamarin.Android remotes/origin/d17-2 @ 4e061b739747f624ccb03c98940d8900548a98ad"

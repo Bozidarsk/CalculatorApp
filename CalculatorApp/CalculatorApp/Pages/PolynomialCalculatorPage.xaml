@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculatorApp.Pages.PolynomialCalculatorPage">
+
+    <ContentView>
+        <StackLayout Orientation="Vertical">
+
+            <Entry 
+                x:Name="input"
+                Completed="Solve"
+                IsSpellCheckEnabled="false"
+                IsTextPredictionEnabled="false"
+                Placeholder="ex: &#x22;+1-2+0-6>=&#x22; is equal to &#x22;x^3 -2x^2 -6 >= 0&#x22;">
+            </Entry>
+
+            <Label x:Name="table"></Label>
+            <Label x:Name="simplified"></Label>
+            <Label x:Name="range"></Label>
+
+        </StackLayout>
+    </ContentView>
+
+</ContentPage>

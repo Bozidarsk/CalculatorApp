@@ -65,6 +65,8 @@
         <ShellContent Route="BasicCalculatorPage" ContentTemplate="{DataTemplate local:BasicCalculatorPage}"/>
     </FlyoutItem>
 
-    <!--<MenuItem Text="Flyout Button" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked"></MenuItem>-->
+    <FlyoutItem Title="Polynomial Calculator">
+        <ShellContent Route="PolynomialCalculatorPage" ContentTemplate="{DataTemplate local:PolynomialCalculatorPage}"/>
+    </FlyoutItem>
 
 </Shell>

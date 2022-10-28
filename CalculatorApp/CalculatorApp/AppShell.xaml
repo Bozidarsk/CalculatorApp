@@ -8,12 +8,6 @@
        Shell.ForegroundColor="White"
        FlyoutBackgroundColor="{AppThemeBinding Light={StaticResource SecondaryColorLight}, Dark={StaticResource SecondaryColorDark}}">
 
-    <Shell.Resources>
-        <ResourceDictionary>
-
-        </ResourceDictionary>
-    </Shell.Resources>
-
     <Shell.ItemTemplate>
         <DataTemplate>
             <Grid x:Name="FlyoutItemLayout"

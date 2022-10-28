@@ -7,21 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Code\Includes\**" />
-    <EmbeddedResource Remove="Code\Includes\**" />
-    <None Remove="Code\Includes\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="..\..\..\Includes\.cs\Utils.Collections.cs" Link="Code\Utils\Utils.Collections.cs" />
-    <Compile Include="..\..\..\Includes\.cs\Utils.Collections.Generic.cs" Link="Code\Utils\Utils.Collections.Generic.cs" />
-    <Compile Include="..\..\..\Includes\.cs\Utils.cs" Link="Code\Utils\Utils.cs" />
-    <Compile Include="..\..\..\Includes\.cs\Utils.Web.cs" Link="Code\Utils\Utils.Web.cs" />
-    <Compile Include="..\..\..\Includes\.cs\Utils.Web.HTTPServer.cs" Link="Code\Utils\Utils.Web.HTTPServer.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="Resources\icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+  	<Compile Include="D:\Projects\Includes\.cs\*.cs"/>
   </ItemGroup>
 
   <ItemGroup>
@@ -29,10 +19,6 @@
     <PackageReference Include="System.Drawing.Common" Version="4.5.2" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Code\Utils\" />
   </ItemGroup>
 
   <ItemGroup>

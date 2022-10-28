@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Utils.Calculators;
 
 namespace CalculatorApp.Pages
 {
@@ -19,7 +20,8 @@ namespace CalculatorApp.Pages
             switch (arg) 
             {
                 case "=":
-                    input = CalculatorApp.BasicCalculator.Solve(input);
+                    input = BasicCalculator.Solve(input);
+                    if (input.StartsWith(BasicCalculator.ErrMsg)) { input = BasicCalculator.ErrMsg; }
                     break;
                 case "cls":
                     input = "0";
